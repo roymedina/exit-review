@@ -383,9 +383,10 @@ article p {
     
     .logo-gif {
         margin-left: 26%;
+        width: 70%;
     }
     
     #arrow-down {
-    left: 85%;
+        left: 85%;
     }
 }
