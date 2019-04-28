@@ -15,22 +15,26 @@ body {
     background-color: #DC3F2E;
     background-image: url(img/Pattern.svg);
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .section1-content {
+    overflow: hidden;
     position: absolute;
     bottom: 0;
-    margin-left: 180px;
-    margin-bottom: 30px;
+    margin-left: 190px;
+    margin-bottom: 40px;
+    width: 100%;
 }
 
 .logo-gif {
     width: 40%;
-    padding-bottom: 14px;
+    margin-left: 190px;
+    margin-top: 40px;
 }
 
 .homeaway-logo {
-    width: 117px;
+    max-width: 117px;
     margin-left: 5px;
 }
 
@@ -51,11 +55,9 @@ body {
 #arrow-down {
     animation: jump 3s infinite;
     position: absolute;
-    bottom: 0;
-    margin-left: 95%;
-    margin-bottom: 30px;
+    left: 95%;
+    margin-bottom: 35px;
 }
-
 
 i {
     content: '\f0a8';
@@ -90,7 +92,7 @@ i:hover {
     font-weight: 400;
     padding: 10px 20px;
     border-radius: 100px;
-  background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
 }
@@ -318,41 +320,8 @@ footer {
     display: inline-block;
 }
 
-/*
-input[type="checkbox"] {
-	opacity: 0;
-}
-
-input[type=checkbox]+label {
-	border-radius: 20px;
-	border: 2px solid #DC3F2E;
-    width:120px;
-	color: #DC3F2E;
-	background-color: #DFE2D5;
-}
-
-input[type=checkbox]+label:hover {
-    background-color: #DC3F2E;
-	color: #DFE2D5;
-}
-
-input[type=checkbox]:checked+label {
-	background-color: #DC3F2E;
-	color: #DFE2D5;
-}
-
-input[type=checkbox]:checked+label:hover {
-	background-color: #DC3F2E;
-    color:#DFE2D5;
-}
-
-.filter-item p{
-    padding-top:.5rem;
-    font-size:16px;
-}
-*/
-
 /* Text Styles */
+
 a {
     color: #DFE2D5;
 }
@@ -402,24 +371,21 @@ article p {
 @media screen and (max-width: 728px) {
     
     #section1 {
-        background-image: url(img/Pattern.svg);
+        background-image: url(img/Pattern.svg );
         background-repeat: repeat-y;
-        background-size: 20%;
+        background-size: 19%;
+        
     }
     
     .section1-content {
-        margin-left: 25%;
-        margin-bottom: 5%;
+        margin-left: 26%;
     }
     
     .logo-gif {
-        width: 90%;
-}
-
-    #arrow-down {
-        margin-left: 85%;
-        margin-bottom: 20px;
+        margin-left: 26%;
     }
     
-    
-
+    #arrow-down {
+    left: 85%;
+    }
+}
